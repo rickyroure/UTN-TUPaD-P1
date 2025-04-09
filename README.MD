@@ -3,11 +3,11 @@
 📍 *Universidad Tecnológica Nacional*  
 
 ## ✨ Estudiante  
-- **Nombre:Roure Ricardo** 
-- **Comisión:M2025-21** 
+- **Nombre:** Roure Ricardo
+- **Comisión:** M2025-21  
 
 ## 📂 Descripción del Repositorio  
-**Programación 1**.  
+Este repositorio almacena todas los trabajos prácticos realizados durante la cursada de **Programación 1**.  
 
 📌 **Estructura del repositorio:**  
 - Cada trabajo está organizado en carpetas individuales.  
@@ -17,4 +17,3 @@
 > ⚠️ **Nota:** Este README y los nombres de los archivos de los trabajos prácticos deben ser actualizados con tus datos personales.
 > 
 > ¡Recuerda mantener actualizado tu repositorio!
-
