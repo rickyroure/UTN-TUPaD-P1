@@ -1,9 +1,8 @@
-EDAD_MINIMA = 21
+a = int(input("A:"))
+b = int(input("B:"))
 
-edad = int(input("Ingrese su edad: ")) 
-categoria = input("Igrese su categoria(A, B, C, D, E, F, G): ")
-
-if edad >= EDAD_MINIMA and (categoria == "D" or "d"):
-    print("Prueba de conducir ambulancia")
+if b != 0:
+    division = a // b
+    print("EL resultado es: ", division)
 else:
-    print("No puede conducir ambulancia")
+    print("Elige otro numero distinto a 0")
