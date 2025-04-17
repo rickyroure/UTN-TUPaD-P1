@@ -25,11 +25,31 @@
 #print("La sumatoria de los valores es",sumatoria)
 #print("El primedio",(sumatoria/cant_numeros))
 
-sueldoAnual = 0
+#sueldoAnual = 0
 
-for contMeses in range(1,13):
-    print("Ingrese su sueldo para el mes n°",contMeses)
-    sueldoMensual = float(input())
-    sueldoAnual+= sueldoMensual
+#for contMeses in range(1,13):
+#    print("Ingrese su sueldo para el mes n°",contMeses)
+#    sueldoMensual = int(input())
+#    sueldoAnual+= sueldoMensual
 
-print("Su sueldo anual es" ,sueldoAnual)
+#print("Su sueldo anual es" ,sueldoAnual)
+
+max_numero = float("-inf")
+min_numero = float("inf")
+pos_max = -1
+pos_min = -1
+
+for cont in range(1,5):
+    print("Ingrese numero",(cont))
+    num = int(input())
+    if num > max_numero:
+        max_numero = num
+        pos_max = cont
+    elif num < min_numero:
+        min_numero = num 
+        pos_min = cont
+    
+print("El maximo es",max_numero)
+print("El minimo es",min_numero)
+print("Posicion maxima es",pos_max)
+print("Posicion minima es",pos_min)
