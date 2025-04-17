@@ -34,22 +34,35 @@
 
 #print("Su sueldo anual es" ,sueldoAnual)
 
-max_numero = float("-inf")
-min_numero = float("inf")
-pos_max = -1
-pos_min = -1
+#max_numero = float("-inf")
+#min_numero = float("inf")
+#pos_max = -1
+#pos_min = -1
 
-for cont in range(1,5):
-    print("Ingrese numero",(cont))
-    num = int(input())
-    if num > max_numero:
-        max_numero = num
-        pos_max = cont
-    elif num < min_numero:
-        min_numero = num 
-        pos_min = cont
+#for cont in range(1,5):
+#    print("Ingrese numero",(cont))
+#    num = int(input())
+#    if num > max_numero:
+#        max_numero = num
+#        pos_max = cont
+#    if num < min_numero:
+#        min_numero = num 
+#        pos_min = cont
     
-print("El maximo es",max_numero)
-print("El minimo es",min_numero)
-print("Posicion maxima es",pos_max)
-print("Posicion minima es",pos_min)
+#print("El maximo es",max_numero)
+#print("El minimo es",min_numero)
+#print("Posicion maxima es",pos_max)
+#print("Posicion minima es",pos_min)
+
+numero = int(input("Ingrese un numero positivo: "))
+
+if numero > 0:
+    if numero % 2 != 0:
+       numero = numero - 1
+    cont = numero
+    while cont >= 0:
+        print(str(cont) + " ", end="")
+        cont = cont -2
+
+else:
+    print("El numero no es positivo")
