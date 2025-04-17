@@ -54,15 +54,34 @@
 #print("Posicion maxima es",pos_max)
 #print("Posicion minima es",pos_min)
 
-numero = int(input("Ingrese un numero positivo: "))
+#numero = int(input("Ingrese un numero positivo: "))
 
-if numero > 0:
-    if numero % 2 != 0:
-       numero = numero - 1
-    cont = numero
-    while cont >= 0:
-        print(str(cont) + " ", end="")
-        cont = cont -2
+#if numero > 0:
+#    if numero % 2 != 0:
+#       numero = numero - 1
+#    cont = numero
+#    while cont >= 0:
+#        print(str(cont) + " ", end="")
+#        cont = cont -2
 
+#else:
+#    print("El numero no es positivo")
+
+corte = "*"
+nombre_invalido = "XXXXXXXXXX"
+edad_min = float("inf")
+nombre_mas_joven = nombre_invalido
+
+nombre = input(f"Ingrese nombre({ corte } para cortar): ")
+
+while nombre != corte:
+    edad = int(input(f"Ingrese la edad de {nombre}: "))
+    if edad < edad_min:
+        edad_min = edad
+        nombre_mas_joven = nombre
+    nombre = input("Ingrese otro nombre("+ corte +" para cortar): ")
+
+if nombre_mas_joven == nombre_invalido:
+    print("No se ingresaron nombre")
 else:
-    print("El numero no es positivo")
+    print(f"La persona mas joven de {edad} años es {nombre_mas_joven}" )
