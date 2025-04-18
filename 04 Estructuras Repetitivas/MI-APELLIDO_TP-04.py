@@ -67,21 +67,42 @@
 #else:
 #    print("El numero no es positivo")
 
-corte = "*"
-nombre_invalido = "XXXXXXXXXX"
-edad_min = float("inf")
-nombre_mas_joven = nombre_invalido
+#corte = "*"
+#nombre_invalido = "XXXXXXXXXX"
+#edad_min = float("inf")
+#nombre_mas_joven = nombre_invalido
 
-nombre = input(f"Ingrese nombre({ corte } para cortar): ")
+#nombre = input(f"Ingrese nombre({ corte } para cortar): ")
 
-while nombre != corte:
-    edad = int(input(f"Ingrese la edad de {nombre}: "))
-    if edad < edad_min:
-        edad_min = edad
-        nombre_mas_joven = nombre
-    nombre = input("Ingrese otro nombre("+ corte +" para cortar): ")
+#while nombre != corte:
+#    edad = int(input(f"Ingrese la edad de {nombre}: "))
+#    if edad < edad_min:
+#        edad_min = edad
+#        nombre_mas_joven = nombre
+#    nombre = input("Ingrese otro nombre("+ corte +" para cortar): ")
 
-if nombre_mas_joven == nombre_invalido:
-    print("No se ingresaron nombre")
-else:
-    print(f"La persona mas joven de {edad} años es {nombre_mas_joven}" )
+#if nombre_mas_joven == nombre_invalido:
+#    print("No se ingresaron nombre")
+#else:
+#    print(f"La persona mas joven de {edad} años es {nombre_mas_joven}" )
+
+#numero = int(input("Ingrese un numero entre 1 y 10: "))
+
+#if numero >=1 and numero <=10:
+#    for cont in range(1,11):
+#        print(f"{numero} x {cont} = {numero * cont}" )
+#else:
+#    print("No ingresaste un numero de 1 a 10")
+
+cant_personas = int(input("Ingrese una cantidad de persona: "))
+edad_minima = 18
+cant_personas_mayores = 0
+
+for cont in range(1,cant_personas+1):
+    print(f"Ingrese la edad n° {cont}")
+    edad = int(input()) 
+    if edad >= edad_minima:
+        cant_personas_mayores += 1
+
+porc = (cant_personas_mayores/cant_personas) * 100 
+print(f"El porcentaje de personas mayores de edad es {porc}%")
