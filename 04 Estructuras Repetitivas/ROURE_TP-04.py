@@ -110,15 +110,20 @@
 #media de esos valores. (Nota: puedes probar el programa con una cantidad menor, pero debe
 #poder procesar 100 números cambiando solo un valor).
 
-total_numeros = 100  
+#total_numeros = 100  
 
-suma = 0
+#suma = 0
 
-for i in range(total_numeros):
-    numero = int(input(f"Ingrese el número {i+1}: "))
-    suma += numero
+#for i in range(total_numeros):
+#    numero = int(input(f"Ingrese el número {i+1}: "))
+#    suma += numero
 
-media = suma / total_numeros
+#media = suma / total_numeros
 
-print("La media de los números ingresados es:", media)
+#print("La media de los números ingresados es:", media)
 
+#numero = input("Ingrese un número: ")
+
+#numero_invertido = numero[::-1]
+
+#print("Número invertido:", numero_invertido)
