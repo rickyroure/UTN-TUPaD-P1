@@ -24,7 +24,16 @@
 #en los videos o bien investigar cómo funciona el indexing con números negativos!
 #animales = ["perro", "gato", "conejo", "pez"]
 
-lista = ["perro","gato","conejo","pez"]
-lista[1] = "loro"
-lista[3] = "oso"
-print(lista)
+#lista = ["perro","gato","conejo","pez"]
+#lista[1] = "loro"
+#lista[3] = "oso"
+#print(lista)
+
+#5) Analizar el siguiente programa y explicar con tus palabras qué es lo que realiza.
+
+#se define una lista llamada numeros con los valores [8, 15, 3, 22, 7].max(numeros) encuentra el valor más 
+#grande de la lista, que es 22.
+#numeros.remove(max(numeros)) elimina el primer valor que coincide con el máximo encontrado.
+#En este caso, elimina el valor 22 de la lista. 
+#Finalmente, print(numeros) imprime la lista después de la eliminación del valor máximo. La lista resultante será 
+#[8, 15, 3, 7] porque el número 22 fue removido.
